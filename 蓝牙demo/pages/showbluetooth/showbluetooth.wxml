@@ -1,0 +1,6 @@
+<!--pages/showbluetooth/showbluetooth.wxml-->
+<view class='root'>
+  <view class='Characteristics' wx:for = "{{characteristics}}" wx:key = "characteristics">
+    <text class='Characteristicstext' bindtap = 'getCharacteristicValue' data-num="{{index}}">特征值{{index}},uuid：{{item.uuid}}，\n支持 读取 操作：{{item.properties.read ? '支持' : '不支持'}}，\n支持 写入 操作：{{item.properties.write ? '支持' : '不支持'}}，\n支持 监听 操作：{{item.properties.notify ? '支持' : '不支持'}}     </text>
+  </view>
+</view>

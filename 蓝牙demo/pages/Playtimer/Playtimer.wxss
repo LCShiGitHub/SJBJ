@@ -1,0 +1,17 @@
+/* pages/Playtimer/Playtimer.wxss */
+
+.root{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.root text{
+  margin-top: 40rpx;
+}
+.canvasClass{
+  margin-top: 100rpx;
+  width: 320px;
+  height: 200px;
+}

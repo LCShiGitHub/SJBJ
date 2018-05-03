@@ -1,0 +1,12 @@
+/* pages/OperateMap/OperateMap.wxss */
+
+.root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBtn{
+  margin-top: 20rpx;
+  color: royalblue;
+}

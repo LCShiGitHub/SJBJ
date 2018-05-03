@@ -1,0 +1,55 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.5.3",
+	"appid": "wx4c73d8993f8578ef",
+	"projectname": "%E8%93%9D%E7%89%99demo",
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "进入蓝牙操作",
+					"pathName": "pages/bluetooth/bluetooth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地图",
+					"pathName": "pages/OperateMap/OperateMap",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Playtimer",
+					"pathName": "pages/Playtimer/Playtimer"
+				}
+			]
+		}
+	}
+}

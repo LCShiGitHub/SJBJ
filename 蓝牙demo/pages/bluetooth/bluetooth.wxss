@@ -1,0 +1,31 @@
+/* pages/bluetooth/bluetooth.wxss */
+.root{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.text{
+  margin-top: 40rpx;
+  width: 100%;
+  text-align: center;
+  font: 38rpx;
+  color: royalblue;
+}
+
+.Characteristics{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.Characteristicstext{
+  margin-top: 40rpx;
+  width: 100%;
+  text-align: center;
+  font: 26rpx;
+  color: lightcoral;
+}

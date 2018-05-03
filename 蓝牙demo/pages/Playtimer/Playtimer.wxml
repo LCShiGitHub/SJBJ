@@ -1,0 +1,9 @@
+
+<view class='root'>
+  <text bindtap='star'>启动</text>
+  <text bindtap='suspend'>暂停</text>
+  <text bindtap='end'>结束</text>
+  <text>{{dateText}}</text>
+
+  <canvas class='canvasClass' canvas-id="PlaytimerCanvas"></canvas>
+</view>

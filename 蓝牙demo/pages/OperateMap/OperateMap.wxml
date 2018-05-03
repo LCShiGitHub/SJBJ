@@ -1,0 +1,6 @@
+<!--pages/OperateMap/OperateMap.wxml-->
+<view class='root'>
+  <map id="map" scale="14" bindcontroltap="controltap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 1000rpx"></map>
+  <text class='textBtn' bindtap='showPath'>显示路线</text>
+</view>
+

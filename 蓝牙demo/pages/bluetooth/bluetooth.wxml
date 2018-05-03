@@ -1,0 +1,14 @@
+<!--pages/bluetooth/bluetooth.wxml-->
+<view class='root'>
+  <text class='text' bindtap='openBluetooth'>初始化蓝牙模块</text>
+  <text class='text' style='color: {{textColor}}' bindtap='getBluetoothState'>{{showblueState}}</text>
+  <text class='text' style='color: {{textColor}}' bindtap='startBluetoothDevices'>{{showText}}</text>
+  <text class='text' style='color: {{textColor}}' bindtap='createBLE'>{{joinDevaces}}</text>
+  <text class='text' style='color: {{textColor}}' bindtap='getServices'>{{buleToothServices}}</text>
+  <view class='Characteristics' wx:for = "{{ToothServices}}" wx:key = "ToothServices">
+    <text class='Characteristicstext' bindtap='getCharacteristics' data-num="{{index}}">服务{{index}}uuid：{{item.uuid}}     </text>
+  </view>
+  <text class='text' style='color: {{textColor}}' bindtap='closeBLE'>{{joinSuccess}}</text>
+  <text class='text' style='color: {{textColor}}' bindtap='closeBluetooth'>关闭蓝牙模块</text>
+  
+</view>
