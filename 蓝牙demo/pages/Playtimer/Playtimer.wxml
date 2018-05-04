@@ -5,5 +5,6 @@
   <text bindtap='end'>结束</text>
   <text>{{dateText}}</text>
 
-  <canvas class='canvasClass' canvas-id="PlaytimerCanvas"></canvas>
+  <canvas class='canvasClass' canvas-id="PlaytimerCanvas" bindtouchstart="touchstart"></canvas>
+  <text bindtap='randomly'>随机切换</text>
 </view>

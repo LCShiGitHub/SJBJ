@@ -11,7 +11,7 @@ Page({
     shi: 0,
     feng: 0,
     miao: 0,
-    data: [10, 100, 10, 100, 10, 100, 10, 100, 10, 100, 10]
+    data: []
   },
 
   /**
@@ -26,12 +26,14 @@ Page({
    */
   onReady: function () {
     timerCanvas = wx.createCanvasContext('PlaytimerCanvas');
+  },
+  setCanvas() {
     // 设置描边颜色
     timerCanvas.setStrokeStyle("#7cb5ec");
     // 设置线宽
     timerCanvas.setLineWidth(4);
     timerCanvas.moveTo(10, 150 - this.data.data[0]);
-    for(var i = 1; i < this.data.data.length; i ++) {
+    for (var i = 1; i < this.data.data.length; i++) {
       timerCanvas.lineTo(30 * i + 10, 150 - this.data.data[i]);
     }
     timerCanvas.stroke();
@@ -41,9 +43,11 @@ Page({
     timerCanvas.setLineWidth(6);
     // 设置填充颜色
     timerCanvas.setFillStyle("#7cb5ec");
-    timerCanvas.moveTo(10 + 3, 150 - this.data.data[0]);
-    // 绘制圆形区域
-    timerCanvas.arc(10, 150 - this.data.data[0], 3, 0, 2 * Math.PI, false);
+    if(this.data.data.length > 0) {
+      timerCanvas.moveTo(10 + 3, 150 - this.data.data[0]);
+      // 绘制圆形区域
+      timerCanvas.arc(10, 150 - this.data.data[0], 3, 0, 2 * Math.PI, false);
+    }
     for (var i = 1; i < this.data.data.length; i++) {
       timerCanvas.moveTo(10 + 3 + 30 * i, 150 - this.data.data[i]);
       // 绘制圆形区域
@@ -125,6 +129,37 @@ Page({
       feng: 0,
       miao: 0
     })
+  },
+  touchstart(e) {
+    console.log('x:' + e.touches[0].x)
+    console.log('y:' + e.touches[0].y)
+    let touthX = e.touches[0].x
+    let touthY = e.touches[0].y
+    var touthIndex = -1
+    for(var i = 0; i < this.data.data.length; i ++) {
+      if ((touthX > i * 30 + 6) && (touthX < i * 30 + 16) && (144 - touthY) < this.data.data[i] && (156 - touthY) >  this.data.data[i] ) {
+        console.log('触摸到了')
+        touthIndex = i
+        break
+      }
+    }
+    if(touthIndex !== -1) {
+      console.log('触摸到点-----' + touthIndex)
+    } else {
+      console.log('没有触摸到点')
+    }
+  },
+  randomly() {
+    var newdata = []
+    for(var i = 0; i < 11; i ++) {
+      let dandom = parseInt(100 * Math.random());// 输出0～10之间的随机整数
+      newdata.push(dandom)
+    }
+    console.log(newdata)
+    this.setData({
+      data: newdata
+    })
+    this.setCanvas()
   },
   /**
    * 生命周期函数--监听页面卸载
