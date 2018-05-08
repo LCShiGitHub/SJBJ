@@ -1,6 +1,7 @@
 // pages/Playtimer/Playtimer.js
 var myTimer;
 var timerCanvas;
+var count;
 Page({
 
   /**
@@ -11,14 +12,18 @@ Page({
     shi: 0,
     feng: 0,
     miao: 0,
-    data: []
+    data: [],
+    showX: 0,
+    showY: 0,
+    showindex: -1,
+    imgs: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    count = 0
   },
 
   /**
@@ -28,13 +33,15 @@ Page({
     timerCanvas = wx.createCanvasContext('PlaytimerCanvas');
   },
   setCanvas() {
+    timerCanvas.setFillStyle('#5F9EA0')
+    timerCanvas.fillRect(0, 0, 360, 200)
     // 设置描边颜色
     timerCanvas.setStrokeStyle("#7cb5ec");
     // 设置线宽
     timerCanvas.setLineWidth(4);
-    timerCanvas.moveTo(10, 150 - this.data.data[0]);
+    timerCanvas.moveTo(-15, 150 - this.data.data[0]);
     for (var i = 1; i < this.data.data.length; i++) {
-      timerCanvas.lineTo(30 * i + 10, 150 - this.data.data[i]);
+      timerCanvas.lineTo(30 * i - 15, 150 - this.data.data[i]);
     }
     timerCanvas.stroke();
     timerCanvas.beginPath();
@@ -44,19 +51,39 @@ Page({
     // 设置填充颜色
     timerCanvas.setFillStyle("#7cb5ec");
     if(this.data.data.length > 0) {
-      timerCanvas.moveTo(10 + 3, 150 - this.data.data[0]);
+      timerCanvas.moveTo(-12, 150 - this.data.data[0]);
       // 绘制圆形区域
-      timerCanvas.arc(10, 150 - this.data.data[0], 3, 0, 2 * Math.PI, false);
+      timerCanvas.arc(-15, 150 - this.data.data[0], 3, 0, 2 * Math.PI, false);
     }
     for (var i = 1; i < this.data.data.length; i++) {
-      timerCanvas.moveTo(10 + 3 + 30 * i, 150 - this.data.data[i]);
+      timerCanvas.moveTo(-12 + 30 * i, 150 - this.data.data[i]);
       // 绘制圆形区域
-      timerCanvas.arc(10 + 30 * i, 150 - this.data.data[i], 3, 0, 2 * Math.PI, false);
+      timerCanvas.arc(-15 + 30 * i, 150 - this.data.data[i], 3, 0, 2 * Math.PI, false);
     }
     timerCanvas.closePath();
     // 对当前路径进行描边
     timerCanvas.stroke();
     timerCanvas.draw()
+    setTimeout((res) => {
+      wx.canvasToTempFilePath({
+        x: 0,
+        y: 0,
+        width: 360,
+        height: 200,
+        destWidth: 360,
+        destHeight: 200,
+        canvasId: 'PlaytimerCanvas',
+        success: (res) => {
+          console.log(res.tempFilePath)
+          var newimgs = this.data.imgs
+          newimgs.unshift(res.tempFilePath)
+          console.log(newimgs)
+          this.setData({
+            imgs: newimgs
+          })
+        }
+      })
+    }, 1000)
   },
 
   /**
@@ -137,28 +164,67 @@ Page({
     let touthY = e.touches[0].y
     var touthIndex = -1
     for(var i = 0; i < this.data.data.length; i ++) {
-      if ((touthX > i * 30 + 6) && (touthX < i * 30 + 16) && (144 - touthY) < this.data.data[i] && (156 - touthY) >  this.data.data[i] ) {
+      if ((touthX > i * 30 - 19) && (touthX < i * 30 - 9) && (144 - touthY) < this.data.data[i] && (156 - touthY) >  this.data.data[i] ) {
         console.log('触摸到了')
         touthIndex = i
         break
       }
     }
+    let newData = this.data.data
+    var XX = 0
+    var YY = 0
     if(touthIndex !== -1) {
       console.log('触摸到点-----' + touthIndex)
+      if  (touthIndex === 0) {
+        XX = 0
+        if (newData[0] < newData[1]) {
+          YY = 150 - newData[0]
+        } else {
+          YY = 150 - newData[0]
+        }
+      } else if (touthIndex === newData.length - 1) {
+        if (newData[newData.length - 2] < newData.length - 1) {
+
+        } else {
+
+        }
+      } else {
+
+      }
+      console.log('XX:' + XX + 'YY:' + YY)
+      this.setData({
+        showindex: touthIndex,
+        showX: XX,
+        showY: YY
+      })
     } else {
       console.log('没有触摸到点')
     }
   },
   randomly() {
-    var newdata = []
-    for(var i = 0; i < 11; i ++) {
-      let dandom = parseInt(100 * Math.random());// 输出0～10之间的随机整数
-      newdata.push(dandom)
+    var newdatas = []
+    if(count !== 0){
+      for (var i = 0; i < 12; i++) {
+        let dandom = parseInt(100 * Math.random());// 输出0～10之间的随机整数
+        newdatas.push(dandom)
+      }
+      newdatas.push(this.data.data[0])
+      newdatas.push(this.data.data[1])
+      console.log(newdatas)
+      this.setData({
+        data: newdatas
+      })
+    } else {
+      for (var i = 0; i < 13; i++) {
+        let dandom = parseInt(100 * Math.random());// 输出0～10之间的随机整数
+        newdatas.push(dandom)
+      }
+      console.log(newdatas)
+      this.setData({
+        data: newdatas
+      })
     }
-    console.log(newdata)
-    this.setData({
-      data: newdata
-    })
+    count ++
     this.setCanvas()
   },
   /**

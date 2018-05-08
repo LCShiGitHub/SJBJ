@@ -5,6 +5,15 @@
   <text bindtap='end'>结束</text>
   <text>{{dateText}}</text>
 
-  <canvas class='canvasClass' canvas-id="PlaytimerCanvas" bindtouchstart="touchstart"></canvas>
+  <view class='canvasBg'>
+    <canvas class='canvasClass' canvas-id="PlaytimerCanvas" bindtouchstart="touchstart">
+      <cover-view class='canvasText' style='top:{{showY}}px;left:{{showX}}px' wx:if='{{showindex !== -1}}'>{{data[showindex]}}</cover-view>
+    </canvas>
+  </view>
   <text bindtap='randomly'>随机切换</text>
+  <scroll-view class='scroll' scroll-x='true' scroll-with-animation = "true">
+    <view  class='item' wx:for='{{imgs}}' wx:key='imgs'>
+       <image class='img' src = '{{item}}'></image> 
+    </view>
+  </scroll-view>
 </view>

@@ -10,8 +10,39 @@
 .root text{
   margin-top: 40rpx;
 }
+.canvasBg{
+  position: relative;
+  margin-top: 20rpx;
+}
 .canvasClass{
-  margin-top: 100rpx;
-  width: 320px;
+  width: 360px;
+  height: 200px;
+}
+.canvasText{
+  position: absolute;
+}
+.scroll{
+  width: 360px; 
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+.img{
+  width: 360px;
+  height: 200px;
+}
+.item{
+  display: inline-block;
+}
+.itemClass{
+  background-color: rebeccapurple;
+  width: 360px;
+  height: 200px;
+}
+.itemClass1{
+  background-color: royalblue;
+  width: 360px;
   height: 200px;
 }
