@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2030755F1D3498EE0047FA34 /* gesture_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2030755C1D3498EE0047FA34 /* gesture_logo.png */; };
+		203075601D3498EE0047FA34 /* gesture_yuan_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 2030755D1D3498EE0047FA34 /* gesture_yuan_down.png */; };
+		203075611D3498EE0047FA34 /* gesture_yuan_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 2030755E1D3498EE0047FA34 /* gesture_yuan_up.png */; };
+		206A99CD1D2D27F1006CA427 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A99CC1D2D27F1006CA427 /* main.m */; };
+		206A99D01D2D27F1006CA427 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A99CF1D2D27F1006CA427 /* AppDelegate.m */; };
+		206A99D31D2D27F1006CA427 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A99D21D2D27F1006CA427 /* ViewController.m */; };
+		206A99D61D2D27F1006CA427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206A99D41D2D27F1006CA427 /* Main.storyboard */; };
+		206A99D81D2D27F1006CA427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206A99D71D2D27F1006CA427 /* Assets.xcassets */; };
+		206A99DB1D2D27F1006CA427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206A99D91D2D27F1006CA427 /* LaunchScreen.storyboard */; };
+		206A99E61D2D27F1006CA427 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A99E51D2D27F1006CA427 /* _____Tests.m */; };
+		206A99F11D2D27F1006CA427 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A99F01D2D27F1006CA427 /* _____UITests.m */; };
+		206A9A001D2D282E006CA427 /* PNCGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A99FF1D2D282E006CA427 /* PNCGestureLockView.m */; };
+		206A9A021D2D2A0C006CA427 /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 206A9A011D2D2A0C006CA427 /* login_bg.png */; };
+		206A9A051D2D2A86006CA427 /* btn_home_no.png in Resources */ = {isa = PBXBuildFile; fileRef = 206A9A031D2D2A86006CA427 /* btn_home_no.png */; };
+		206A9A061D2D2A86006CA427 /* btn_home_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 206A9A041D2D2A86006CA427 /* btn_home_yes.png */; };
+		206A9A0A1D2D2E99006CA427 /* ShoushiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A9A081D2D2E99006CA427 /* ShoushiViewController.m */; };
+		206A9A0B1D2D2E99006CA427 /* ShoushiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 206A9A091D2D2E99006CA427 /* ShoushiViewController.xib */; };
+		206BDCA61D2DFAB900426053 /* GestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 206BDCA51D2DFAB900426053 /* GestureView.m */; };
+		20702A471D2F7C9A00DB5197 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20702A451D2F7C9A00DB5197 /* RegistViewController.m */; };
+		20702A481D2F7C9A00DB5197 /* RegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20702A461D2F7C9A00DB5197 /* RegistViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		206A99E21D2D27F1006CA427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 206A99C01D2D27F1006CA427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 206A99C71D2D27F1006CA427;
+			remoteInfo = "自定义手势";
+		};
+		206A99ED1D2D27F1006CA427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 206A99C01D2D27F1006CA427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 206A99C71D2D27F1006CA427;
+			remoteInfo = "自定义手势";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2030755C1D3498EE0047FA34 /* gesture_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_logo.png; sourceTree = "<group>"; };
+		2030755D1D3498EE0047FA34 /* gesture_yuan_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_yuan_down.png; sourceTree = "<group>"; };
+		2030755E1D3498EE0047FA34 /* gesture_yuan_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_yuan_up.png; sourceTree = "<group>"; };
+		206A99C81D2D27F1006CA427 /* 自定义手势.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义手势.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		206A99CC1D2D27F1006CA427 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		206A99CE1D2D27F1006CA427 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		206A99CF1D2D27F1006CA427 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		206A99D11D2D27F1006CA427 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		206A99D21D2D27F1006CA427 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		206A99D51D2D27F1006CA427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		206A99D71D2D27F1006CA427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		206A99DA1D2D27F1006CA427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		206A99DC1D2D27F1006CA427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206A99E11D2D27F1006CA427 /* 自定义手势Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义手势Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		206A99E51D2D27F1006CA427 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		206A99E71D2D27F1006CA427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206A99EC1D2D27F1006CA427 /* 自定义手势UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义手势UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		206A99F01D2D27F1006CA427 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		206A99F21D2D27F1006CA427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206A99FE1D2D282E006CA427 /* PNCGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCGestureLockView.h; sourceTree = "<group>"; };
+		206A99FF1D2D282E006CA427 /* PNCGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCGestureLockView.m; sourceTree = "<group>"; };
+		206A9A011D2D2A0C006CA427 /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bg.png; sourceTree = "<group>"; };
+		206A9A031D2D2A86006CA427 /* btn_home_no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_home_no.png; sourceTree = "<group>"; };
+		206A9A041D2D2A86006CA427 /* btn_home_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_home_yes.png; sourceTree = "<group>"; };
+		206A9A071D2D2E99006CA427 /* ShoushiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoushiViewController.h; sourceTree = "<group>"; };
+		206A9A081D2D2E99006CA427 /* ShoushiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoushiViewController.m; sourceTree = "<group>"; };
+		206A9A091D2D2E99006CA427 /* ShoushiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoushiViewController.xib; sourceTree = "<group>"; };
+		206BDCA41D2DFAB900426053 /* GestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureView.h; sourceTree = "<group>"; };
+		206BDCA51D2DFAB900426053 /* GestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureView.m; sourceTree = "<group>"; };
+		20702A441D2F7C9A00DB5197 /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		20702A451D2F7C9A00DB5197 /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		20702A461D2F7C9A00DB5197 /* RegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		206A99C51D2D27F1006CA427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206A99DE1D2D27F1006CA427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206A99E91D2D27F1006CA427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		206A99BF1D2D27F1006CA427 = {
+			isa = PBXGroup;
+			children = (
+				206A99CA1D2D27F1006CA427 /* 自定义手势 */,
+				206A99E41D2D27F1006CA427 /* 自定义手势Tests */,
+				206A99EF1D2D27F1006CA427 /* 自定义手势UITests */,
+				206A99C91D2D27F1006CA427 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		206A99C91D2D27F1006CA427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				206A99C81D2D27F1006CA427 /* 自定义手势.app */,
+				206A99E11D2D27F1006CA427 /* 自定义手势Tests.xctest */,
+				206A99EC1D2D27F1006CA427 /* 自定义手势UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		206A99CA1D2D27F1006CA427 /* 自定义手势 */ = {
+			isa = PBXGroup;
+			children = (
+				206A9A011D2D2A0C006CA427 /* login_bg.png */,
+				206A9A031D2D2A86006CA427 /* btn_home_no.png */,
+				2030755C1D3498EE0047FA34 /* gesture_logo.png */,
+				2030755D1D3498EE0047FA34 /* gesture_yuan_down.png */,
+				2030755E1D3498EE0047FA34 /* gesture_yuan_up.png */,
+				206A9A041D2D2A86006CA427 /* btn_home_yes.png */,
+				206A99CE1D2D27F1006CA427 /* AppDelegate.h */,
+				206A99CF1D2D27F1006CA427 /* AppDelegate.m */,
+				206A9A071D2D2E99006CA427 /* ShoushiViewController.h */,
+				206A9A081D2D2E99006CA427 /* ShoushiViewController.m */,
+				206A9A091D2D2E99006CA427 /* ShoushiViewController.xib */,
+				20702A441D2F7C9A00DB5197 /* RegistViewController.h */,
+				20702A451D2F7C9A00DB5197 /* RegistViewController.m */,
+				20702A461D2F7C9A00DB5197 /* RegistViewController.xib */,
+				206BDCA41D2DFAB900426053 /* GestureView.h */,
+				206BDCA51D2DFAB900426053 /* GestureView.m */,
+				206A99D11D2D27F1006CA427 /* ViewController.h */,
+				206A99D21D2D27F1006CA427 /* ViewController.m */,
+				206A99FE1D2D282E006CA427 /* PNCGestureLockView.h */,
+				206A99FF1D2D282E006CA427 /* PNCGestureLockView.m */,
+				206A99D41D2D27F1006CA427 /* Main.storyboard */,
+				206A99D71D2D27F1006CA427 /* Assets.xcassets */,
+				206A99D91D2D27F1006CA427 /* LaunchScreen.storyboard */,
+				206A99DC1D2D27F1006CA427 /* Info.plist */,
+				206A99CB1D2D27F1006CA427 /* Supporting Files */,
+			);
+			path = "自定义手势";
+			sourceTree = "<group>";
+		};
+		206A99CB1D2D27F1006CA427 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				206A99CC1D2D27F1006CA427 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		206A99E41D2D27F1006CA427 /* 自定义手势Tests */ = {
+			isa = PBXGroup;
+			children = (
+				206A99E51D2D27F1006CA427 /* _____Tests.m */,
+				206A99E71D2D27F1006CA427 /* Info.plist */,
+			);
+			path = "自定义手势Tests";
+			sourceTree = "<group>";
+		};
+		206A99EF1D2D27F1006CA427 /* 自定义手势UITests */ = {
+			isa = PBXGroup;
+			children = (
+				206A99F01D2D27F1006CA427 /* _____UITests.m */,
+				206A99F21D2D27F1006CA427 /* Info.plist */,
+			);
+			path = "自定义手势UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		206A99C71D2D27F1006CA427 /* 自定义手势 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206A99F51D2D27F1006CA427 /* Build configuration list for PBXNativeTarget "自定义手势" */;
+			buildPhases = (
+				206A99C41D2D27F1006CA427 /* Sources */,
+				206A99C51D2D27F1006CA427 /* Frameworks */,
+				206A99C61D2D27F1006CA427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义手势";
+			productName = "自定义手势";
+			productReference = 206A99C81D2D27F1006CA427 /* 自定义手势.app */;
+			productType = "com.apple.product-type.application";
+		};
+		206A99E01D2D27F1006CA427 /* 自定义手势Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206A99F81D2D27F1006CA427 /* Build configuration list for PBXNativeTarget "自定义手势Tests" */;
+			buildPhases = (
+				206A99DD1D2D27F1006CA427 /* Sources */,
+				206A99DE1D2D27F1006CA427 /* Frameworks */,
+				206A99DF1D2D27F1006CA427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				206A99E31D2D27F1006CA427 /* PBXTargetDependency */,
+			);
+			name = "自定义手势Tests";
+			productName = "自定义手势Tests";
+			productReference = 206A99E11D2D27F1006CA427 /* 自定义手势Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		206A99EB1D2D27F1006CA427 /* 自定义手势UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206A99FB1D2D27F1006CA427 /* Build configuration list for PBXNativeTarget "自定义手势UITests" */;
+			buildPhases = (
+				206A99E81D2D27F1006CA427 /* Sources */,
+				206A99E91D2D27F1006CA427 /* Frameworks */,
+				206A99EA1D2D27F1006CA427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				206A99EE1D2D27F1006CA427 /* PBXTargetDependency */,
+			);
+			name = "自定义手势UITests";
+			productName = "自定义手势UITests";
+			productReference = 206A99EC1D2D27F1006CA427 /* 自定义手势UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		206A99C01D2D27F1006CA427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kkqb;
+				TargetAttributes = {
+					206A99C71D2D27F1006CA427 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3W75JV3VL7;
+					};
+					206A99E01D2D27F1006CA427 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 206A99C71D2D27F1006CA427;
+					};
+					206A99EB1D2D27F1006CA427 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 206A99C71D2D27F1006CA427;
+					};
+				};
+			};
+			buildConfigurationList = 206A99C31D2D27F1006CA427 /* Build configuration list for PBXProject "自定义手势" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 206A99BF1D2D27F1006CA427;
+			productRefGroup = 206A99C91D2D27F1006CA427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				206A99C71D2D27F1006CA427 /* 自定义手势 */,
+				206A99E01D2D27F1006CA427 /* 自定义手势Tests */,
+				206A99EB1D2D27F1006CA427 /* 自定义手势UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		206A99C61D2D27F1006CA427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206A9A0B1D2D2E99006CA427 /* ShoushiViewController.xib in Resources */,
+				206A9A051D2D2A86006CA427 /* btn_home_no.png in Resources */,
+				206A9A021D2D2A0C006CA427 /* login_bg.png in Resources */,
+				206A99DB1D2D27F1006CA427 /* LaunchScreen.storyboard in Resources */,
+				206A99D81D2D27F1006CA427 /* Assets.xcassets in Resources */,
+				206A99D61D2D27F1006CA427 /* Main.storyboard in Resources */,
+				20702A481D2F7C9A00DB5197 /* RegistViewController.xib in Resources */,
+				2030755F1D3498EE0047FA34 /* gesture_logo.png in Resources */,
+				203075601D3498EE0047FA34 /* gesture_yuan_down.png in Resources */,
+				203075611D3498EE0047FA34 /* gesture_yuan_up.png in Resources */,
+				206A9A061D2D2A86006CA427 /* btn_home_yes.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206A99DF1D2D27F1006CA427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206A99EA1D2D27F1006CA427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		206A99C41D2D27F1006CA427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206BDCA61D2DFAB900426053 /* GestureView.m in Sources */,
+				20702A471D2F7C9A00DB5197 /* RegistViewController.m in Sources */,
+				206A99D31D2D27F1006CA427 /* ViewController.m in Sources */,
+				206A99D01D2D27F1006CA427 /* AppDelegate.m in Sources */,
+				206A9A0A1D2D2E99006CA427 /* ShoushiViewController.m in Sources */,
+				206A99CD1D2D27F1006CA427 /* main.m in Sources */,
+				206A9A001D2D282E006CA427 /* PNCGestureLockView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206A99DD1D2D27F1006CA427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206A99E61D2D27F1006CA427 /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206A99E81D2D27F1006CA427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206A99F11D2D27F1006CA427 /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		206A99E31D2D27F1006CA427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 206A99C71D2D27F1006CA427 /* 自定义手势 */;
+			targetProxy = 206A99E21D2D27F1006CA427 /* PBXContainerItemProxy */;
+		};
+		206A99EE1D2D27F1006CA427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 206A99C71D2D27F1006CA427 /* 自定义手势 */;
+			targetProxy = 206A99ED1D2D27F1006CA427 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		206A99D41D2D27F1006CA427 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206A99D51D2D27F1006CA427 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		206A99D91D2D27F1006CA427 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206A99DA1D2D27F1006CA427 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		206A99F31D2D27F1006CA427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		206A99F41D2D27F1006CA427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		206A99F61D2D27F1006CA427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "自定义手势/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkqb.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		206A99F71D2D27F1006CA427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "自定义手势/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkqb.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		206A99F91D2D27F1006CA427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "自定义手势Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkqb.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义手势.app/自定义手势";
+			};
+			name = Debug;
+		};
+		206A99FA1D2D27F1006CA427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "自定义手势Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkqb.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义手势.app/自定义手势";
+			};
+			name = Release;
+		};
+		206A99FC1D2D27F1006CA427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "自定义手势UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkqb.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "自定义手势";
+			};
+			name = Debug;
+		};
+		206A99FD1D2D27F1006CA427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "自定义手势UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kkqb.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "自定义手势";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		206A99C31D2D27F1006CA427 /* Build configuration list for PBXProject "自定义手势" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206A99F31D2D27F1006CA427 /* Debug */,
+				206A99F41D2D27F1006CA427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		206A99F51D2D27F1006CA427 /* Build configuration list for PBXNativeTarget "自定义手势" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206A99F61D2D27F1006CA427 /* Debug */,
+				206A99F71D2D27F1006CA427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		206A99F81D2D27F1006CA427 /* Build configuration list for PBXNativeTarget "自定义手势Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206A99F91D2D27F1006CA427 /* Debug */,
+				206A99FA1D2D27F1006CA427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		206A99FB1D2D27F1006CA427 /* Build configuration list for PBXNativeTarget "自定义手势UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206A99FC1D2D27F1006CA427 /* Debug */,
+				206A99FD1D2D27F1006CA427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 206A99C01D2D27F1006CA427 /* Project object */;
+}

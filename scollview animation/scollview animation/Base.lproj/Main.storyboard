@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MU4-SV-9Gt">
+                                <rect key="frame" x="26" y="38" width="269" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="d5C-aT-R2z"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmented:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mm0-IU-98Y"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jup-gT-aPv">
+                                <rect key="frame" x="175" y="489" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TCq-bh-CAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="1" green="0.034522549569999998" blue="0.092278049560000006" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYA-YI-NiK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASF-Hd-IYs">
+                                <rect key="frame" x="20" y="489" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ttg-ND-ZVd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="1" green="0.034522549569999998" blue="0.092278049560000006" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SF7-QL-dDu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ASF-Hd-IYs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0gk-MU-bZO"/>
+                            <constraint firstAttribute="trailing" secondItem="MU4-SV-9Gt" secondAttribute="trailing" constant="25" id="6GL-RK-acg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ASF-Hd-IYs" secondAttribute="bottom" constant="49" id="BcV-0e-pOo"/>
+                            <constraint firstAttribute="trailing" secondItem="jup-gT-aPv" secondAttribute="trailing" constant="25" id="Olr-QW-cIl"/>
+                            <constraint firstItem="jup-gT-aPv" firstAttribute="leading" secondItem="ASF-Hd-IYs" secondAttribute="trailing" constant="35" id="SLh-cd-Zoo"/>
+                            <constraint firstItem="jup-gT-aPv" firstAttribute="leading" secondItem="ASF-Hd-IYs" secondAttribute="trailing" constant="35" id="aVH-qx-a9T"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jup-gT-aPv" secondAttribute="bottom" constant="49" id="bJ7-lC-s1J"/>
+                            <constraint firstItem="MU4-SV-9Gt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="bY9-gf-qYv"/>
+                            <constraint firstItem="MU4-SV-9Gt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="jEe-Qg-znw"/>
+                            <constraint firstItem="jup-gT-aPv" firstAttribute="width" secondItem="ASF-Hd-IYs" secondAttribute="width" id="uyZ-xE-gcs"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="backBtn" destination="ASF-Hd-IYs" id="rBg-gV-vQe"/>
+                        <outlet property="nextBtn" destination="jup-gT-aPv" id="wJY-Fg-2zM"/>
+                        <outlet property="segmented" destination="MU4-SV-9Gt" id="Q6a-oV-xWf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="405"/>
+        </scene>
+    </scenes>
+</document>

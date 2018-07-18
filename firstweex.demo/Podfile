@@ -1,0 +1,13 @@
+platform :ios, '8.0'
+
+def common
+	pod 'WeexSDK'
+    pod 'WXDevtool'
+    pod 'SDWebImage', '3.7.5'
+    pod 'SocketRocket', '0.4.2'
+    pod 'ATSDK-Weex', '0.0.1'
+end
+
+target 'firstweex.demo' do
+    common
+end
