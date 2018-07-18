@@ -45,9 +45,10 @@
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "Playtimer",
-					"pathName": "pages/Playtimer/Playtimer"
+					"id": 2,
+					"name": "calculateRate",
+					"pathName": "pages/calculateRate/calculateRate",
+					"query": ""
 				}
 			]
 		}

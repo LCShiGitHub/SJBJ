@@ -5,7 +5,8 @@
     "pages/bluetooth/bluetooth",
     "pages/showbluetooth/showbluetooth",
     "pages/OperateMap/OperateMap",
-    "pages/Playtimer/Playtimer"
+    "pages/Playtimer/Playtimer",
+    "pages/calculateRate/calculateRate"
   ],
   "window":{
     "backgroundTextStyle":"light",
