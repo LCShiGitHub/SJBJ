@@ -13,7 +13,7 @@ Page({
     joinDevaces: '',
     joinSuccess: '',
     buleToothServices: '',
-    ToothServices: [],       //设备的所有服务
+    ToothServices: []       //设备的所有服务
   },
 
   /**
@@ -82,7 +82,7 @@ Page({
         })
         wx.showToast({
           title: '您的蓝牙未打开',
-          icon: 'loading',
+          icon: 'success',
           duration: 3000
         })
 
@@ -98,7 +98,7 @@ Page({
           if (res.available == false){
             wx.showToast({
               title: '您的蓝牙未被发现',
-              icon: 'loading',
+              icon: 'success',
               duration: 3000
             })
             this.setData({
@@ -141,7 +141,11 @@ Page({
             // 该方法回调中可以用于处理连接意外断开等异常情况
             console.log(`device ${change.deviceId} state has changed, connected: ${change.connected}`)
           })
-
+        },
+        fail: (res) => {
+          this.setData({
+            joinSuccess: '连接失败'
+          })
         }
       })
     }
@@ -169,6 +173,7 @@ Page({
 
   getServices: function () {
     if (this.data.isblue && this.data.buleToothServices != 0 && this.data.deviceId != 0) {
+      console.log('点击获取设备所有服务')
       wx.getBLEDeviceServices({
         // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接 
         deviceId: this.data.deviceId,
@@ -176,6 +181,11 @@ Page({
           console.log('device services:', res.services)
           this.setData({
             ToothServices: res.services
+          })
+        },
+        fail:(res) => {
+          this.setData({
+            buleToothServices: '获取设备所有服务失败'
           })
         }
       })
@@ -201,6 +211,17 @@ Page({
       wx.closeBluetoothAdapter({
         success: (res) => {
           console.log(res)
+          this.setData({
+            isblue: false,
+            textColor: '#666666',
+            showblueState: '获取手机蓝牙状态',
+            showText: '搜寻附近的蓝牙设备',
+            deviceId: '',
+            joinDevaces: '',
+            joinSuccess: '',
+            buleToothServices: '',
+            ToothServices: [] 
+          })
         }
       })
     }

@@ -1,2 +1,8 @@
 <!--pages/calculateRate/calculateRate.wxml-->
-<text>pages/calculateRate/calculateRate.wxml</text>
+<view class='root'>
+  <view>
+    <text></text>
+    <input></input>
+  </view>
+</view>
+
